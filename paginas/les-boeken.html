@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sport, gym, sportschool, lessen, amsterdam, utrecht, haarlem, amstelveen">
+    <link rel="stylesheet/less" type="text/css" href="../styles.less" />
+    <title>les in boeken</title>
+</head>
+<body>
+
+
+<header class="nav">
+    <img src="../images-1000/logo.png" id="logo" alt="logo">
+    <div id="nav-items">
+        <p onclick="location.href='../index.html';">home</p>
+        <p onclick="location.href='fotogallery.html';">foto's</p>
+        <p onclick="location.href='les-boeken.html';">les boeken</p>
+        <p onclick="location.href='vestigingen.html';">vestigingen</p>
+    </div>
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</header>
+
+
+<div class="container">
+    <!-- hier onder zit de reserver gedeelte voor de gebruiker om in teplannen -->
+    <div class="left-section">
+        <h2>Les Reserveren</h2>
+        <label for="name">Naam:</label>
+        <input type="text" id="name" required>
+        <br>
+
+        <label for="customerNumber">Klantnummer:</label>
+        <input type="text" id="customerNumber" required>
+        <br>
+
+        <label for="phone">Telefoonnummer:</label>
+        <input type="tel" id="phone" required>
+        <br>
+
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" required>
+        <br>
+
+        <label for="lesson">Les:</label>
+        <select id="lesson">
+            <option value="conditietraining">Algemene Conditietraining</option>
+            <option value="bodybuilding">Body Building</option>
+            <option value="bodypump">Body Pump</option>
+            <option value="boksen">Boksen</option>
+            <option value="hardlopen">Hardlopen</option>
+            <option value="spinning">Spinning</option>
+            <option value="yoga">Yoga</option>
+        </select>
+
+        <br>
+        <label for="day">Datum (dd mm jj):</label>
+        <input type="text" id="day" placeholder="bijv. 01 01 23" pattern="\d{2} \d{2} \d{2}" required>
+
+        <label for="time">Tijdstip:</label>
+        <input type="time" id="time">
+
+        <button onclick="reserveLesson()">Reserveer</button>
+    </div>
+    <!-- hier onder zie je de momenten die de gebruiker heeft gereseveerd -->
+    <div class="right-section">
+        <h2>Reserverings Overzicht</h2>
+        <div id="reservation-details"></div>
+        <div id="total-cost"></div>
+    </div>
+</div>
+
+</body>
+<footer>
+<h2>let your body roc!</h2>
+</footer>
+
+<script src="../scripts/script.js"></script> 
+<!-- hier onder wordt de script op geroepen die de lessen in boeken -->
+<script src="../scripts/lessen-boeken.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</html>

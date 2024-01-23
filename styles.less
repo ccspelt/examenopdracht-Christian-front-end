@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+// alle kleuren de worden gebruikt
+#colors(){
+    red: #FF4D4D;
+    gray:#808080;
+    black:#333;
+    white: #ffffff;
+}
+
+//alle informatie die ik nodig heb voor de resever boxen
+.border{
+    border-style: solid;
+    border-color: #colors[gray];
+    width: 40%;
+    margin-top: 20px;
+    max-height: 300px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inhoud-left-section{
+    margin: auto;
+    width: 80%;
+}
+
+.nav {
+    background-color:#colors[red];
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+#nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+#nav-items p {
+    color: #colors[white];
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #colors[white];
+    height: 5px;
+    width: 30px;
+    margin: 6px 0;
+}
+img#logo{
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+}
+
+.contact-block {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+    width: 40%;
+}
+
+.vestigingen-pagina{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-bottom: 2.5rem;
+}
+
+// alle veranderingen als die de groote gebruikt van de telefoon.
+@media only screen and (max-width: 768px) {
+    #nav-items {
+        display: none;
+        flex-direction: column;
+        background-color: #colors[red];
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+    }
+
+    #nav-items p {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+    img#logo{
+        height: 55px;
+        width: 55px;
+
+    }
+
+    .border{
+        border-style: solid;
+        border-color: #colors[gray];
+        width: 160%;
+        margin-top: 20px;
+        max-height: 300px;
+        min-height: 600px;
+        margin-left:10%;
+    }
+
+    div.container{
+        display: flex;
+        flex-direction: column;
+        margin-left:10%;
+        width: 190%;
+        padding-bottom: 2.5rem;
+
+    }
+
+    .contact-block {
+        width: 48%;
+        display: inline-block;
+    }
+}
+
+div#welkom-tekst{
+    width: 80%;
+    margin: auto;
+}
+
+div.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+div.main-paige{
+    margin-top: 25px;
+    
+}
+
+div.left-section{
+    .border();
+    
+}
+
+div.right-section{
+    .border()
+}
+
+div.left-section input , div.left-section label , div.left-section select{
+    .inhoud-left-section();
+    
+}
+
+
+footer {
+    background-color: #colors[black];
+    color: #colors[white];
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}

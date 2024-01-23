@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet/less" type="text/css" href="../styles.less" />
+    <meta name="keywords" content="sport, gym, sportschool, lessen, amsterdam, utrecht, haarlem, amstelveen">
+    <!-- hier onder wordt bootsrap opgeroepen zodat de slide kan gemaakt worden -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>foto's</title>
+</head>
+<body>
+
+<header class="nav">
+    <img src="../images-1000/logo.png" id="logo" alt="logo">
+    <div id="nav-items">
+        <p onclick="location.href='../index.html';">home</p>
+        <p onclick="location.href='fotogallery.html';">foto's</p>
+        <p onclick="location.href='les-boeken.html';">les boeken</p>
+        <p onclick="location.href='vestigingen.html';">vestigingen</p>
+    </div>
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</header>
+
+<!-- hier onder zit de slideshow -->
+<div id="fotoCarrousel" class="fotos carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+            <img src="../images-1000/aerobics.jpg" alt="aerobics">
+        </div>
+        <div class="carousel-item">
+            <img src="../images-1000/bodybuilding.jpg" alt="bodybuilding">
+        </div>
+        <div class="carousel-item">
+            <img src="../images-1000/boksen.jpg" alt="boksen">
+        </div>
+        <div class="carousel-item">
+            <img src="../images-1000/cardio.jpg" alt="cardio">
+        </div>
+        <div class="carousel-item">
+            <img src="../images-1000/groepslessen.jpg" alt="groepslessen">
+        </div>
+        <div class="carousel-item">
+            <img src="../images-1000/spinnen.jpg" alt="spinnen">
+        </div>
+        <div class="carousel-item">
+            <img src="../images-1000/yoga.jpg" alt="yoga">
+        </div>
+    </div>
+    
+    <!-- Navigatie-pijlen -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#fotoCarrousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Vorige</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#fotoCarrousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Volgende</span>
+    </button>
+</div>
+
+
+</body>
+<footer>
+<h2>let your body roc!</h2>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</html>
